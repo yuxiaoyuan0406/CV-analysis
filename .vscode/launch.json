@@ -10,6 +10,19 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python debug: main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--data",
+                "/home/dennis/Program/cv-analysis/data/20240925/cv",
+                // "${command:pickArgs}",
+                "--verbos"
+            ],
         }
     ]
 }

@@ -1,0 +1,15 @@
+# Mems表头C/V测试数据分析脚本
+
+## Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run
+
+Note: Your data directory must contains two subdirectories: `C-V` and `Sec Para`.
+
+```bash
+python --data /path/to/your/data
+```

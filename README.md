@@ -11,5 +11,5 @@ pip install -r requirements.txt
 Note: Your data directory must contains two subdirectories: `C-V` and `Sec Para`.
 
 ```bash
-python --data /path/to/your/data
+python main.py --data /path/to/your/data
 ```

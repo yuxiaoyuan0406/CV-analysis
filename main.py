@@ -31,7 +31,14 @@ def argue_parser():
     return parser.parse_args()
 
 
-def plot_condition(exp_list, condition_func, fig_file_name):
+def plot_condition(exp_list: list[Experiment], condition_func, fig_file_name):
+    """Plot experiments data under certain conditions.
+
+    Args:
+        exp_list (list:Experiment): The list of experiments to plot.
+        condition_func (func(Experiment)->Bool): The condition function.
+        fig_file_name (str): The figure name to save figure.
+    """
     plt.figure()
     for exp in exp_list:
         if condition_func(exp):
